@@ -4,13 +4,19 @@ import { AuthService, useAuth } from "gatsby-theme-auth0"
 export default () => {
   const { isLoggedIn, profile } = useAuth()
   return (
-    <div>
-      {profile && <p>Hello {profile.name}</p>}
-      {isLoggedIn ? (
-        <button onClick={AuthService.logout}>Logout</button>
-      ) : (
-        <button onClick={AuthService.login}>Login</button>
+    <React.Fragment>
+      {profile && (
+        <li key="Hello Username" className="navbar__item navbar__item--btn">
+          Hello {profile.name}
+        </li>
       )}
-    </div>
+      <li key={"Login Button"} className="navbar__item navbar__item--btn">
+        {isLoggedIn ? (
+          <button onClick={AuthService.logout}>Logout</button>
+        ) : (
+          <button onClick={AuthService.login}>Login</button>
+        )}
+      </li>
+    </React.Fragment>
   )
 }

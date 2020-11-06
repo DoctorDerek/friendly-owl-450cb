@@ -81,12 +81,7 @@ export default class Header extends React.Component {
                         </svg>
                       </button>
                       <ul className="navbar__list menu">
-                        <li
-                          key={"Login"}
-                          classNames="navbar__item navbar__item--btn"
-                        >
-                          <Login />
-                        </li>
+                        <Login />
                         {_.map(
                           _.get(
                             this.props,
