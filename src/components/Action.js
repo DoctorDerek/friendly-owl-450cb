@@ -1,11 +1,11 @@
-import React from "react"
-import _ from "lodash"
+import React from "react";
+import _ from "lodash";
 
-import { Link, classNames, withPrefix } from "../utils"
+import { Link, classNames, withPrefix } from "../utils";
 
 export default class Action extends React.Component {
   render() {
-    let action = _.get(this.props, "action", null)
+    let action = _.get(this.props, "action", null);
     return (
       <Link
         className={classNames({
@@ -19,6 +19,6 @@ export default class Action extends React.Component {
       >
         {_.get(action, "label", null)}
       </Link>
-    )
+    );
   }
 }

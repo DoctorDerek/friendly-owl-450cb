@@ -1,8 +1,8 @@
-import React from "react"
-import { AuthService, useAuth } from "gatsby-theme-auth0"
+import React from "react";
+import { AuthService, useAuth } from "gatsby-theme-auth0";
 
 export default () => {
-  const { isLoggedIn, profile } = useAuth()
+  const { isLoggedIn, profile } = useAuth();
   return (
     <div>
       {profile && <p>Hello {profile.name}</p>}
@@ -12,5 +12,5 @@ export default () => {
         <button onClick={AuthService.login}>Login</button>
       )}
     </div>
-  )
-}
+  );
+};
