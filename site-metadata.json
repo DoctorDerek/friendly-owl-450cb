@@ -1,1 +1,100 @@
-{"header":{"type":"header","nav_links":[{"type":"action","new_window":false,"style":"link","label":"Features","url":"/features"},{"type":"action","new_window":false,"style":"link","label":"Blog","url":"/blog"},{"type":"action","new_window":false,"style":"link","label":"About","url":"/about"},{"type":"action","new_window":false,"style":"link","label":"Style Guide","url":"/style-guide"},{"type":"action","new_window":false,"style":"primary","label":"Contact Us","url":"/contact"}],"has_nav":true,"title":"Starter"},"footer":{"links":[{"type":"action","new_window":true,"style":"link","label":"Made with Stackbit.","url":"https://www.stackbit.com"}],"type":"footer","content":"&copy; Stackbit-Starter. All rights reserved.","social_links":[{"type":"action","new_window":true,"style":"link","label":"Twitter","url":"https://twitter.com/"},{"type":"action","new_window":true,"style":"link","label":"GitHub","url":"https://github.com/"},{"type":"action","new_window":true,"style":"link","label":"LinkedIn","url":"https://www.linkedin.com/"}],"nav_links":[{"type":"action","new_window":false,"style":"link","label":"Contact Us","url":"/contact"},{"type":"action","new_window":false,"style":"link","label":"Privacy and Terms","url":"/terms"}],"has_social":true,"has_nav":true},"description":"An ultra customizable generic theme for Stackbit","title":"Stackbit Starter Theme"}
+{
+  "header": {
+    "type": "header",
+    "nav_links": [
+      {
+        "type": "action",
+        "new_window": false,
+        "style": "link",
+        "label": "Features",
+        "url": "/features"
+      },
+      {
+        "type": "action",
+        "new_window": false,
+        "style": "link",
+        "label": "Blog",
+        "url": "/blog"
+      },
+      {
+        "type": "action",
+        "new_window": false,
+        "style": "link",
+        "label": "About",
+        "url": "/about"
+      },
+      {
+        "type": "action",
+        "new_window": false,
+        "style": "link",
+        "label": "Style Guide",
+        "url": "/style-guide"
+      },
+      {
+        "type": "action",
+        "new_window": false,
+        "style": "primary",
+        "label": "Contact Us",
+        "url": "/contact"
+      }
+    ],
+    "has_nav": true,
+    "title": "Starter"
+  },
+  "footer": {
+    "links": [
+      {
+        "type": "action",
+        "new_window": true,
+        "style": "link",
+        "label": "Made with Stackbit.",
+        "url": "https://www.stackbit.com"
+      }
+    ],
+    "type": "footer",
+    "content": "&copy; Stackbit-Starter. All rights reserved.",
+    "social_links": [
+      {
+        "type": "action",
+        "new_window": true,
+        "style": "link",
+        "label": "Twitter",
+        "url": "https://twitter.com/"
+      },
+      {
+        "type": "action",
+        "new_window": true,
+        "style": "link",
+        "label": "GitHub",
+        "url": "https://github.com/"
+      },
+      {
+        "type": "action",
+        "new_window": true,
+        "style": "link",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/"
+      }
+    ],
+    "nav_links": [
+      {
+        "type": "action",
+        "new_window": false,
+        "style": "link",
+        "label": "Contact Us",
+        "url": "/contact"
+      },
+      {
+        "type": "action",
+        "new_window": false,
+        "style": "link",
+        "label": "Privacy and Terms",
+        "url": "/terms"
+      }
+    ],
+    "has_social": true,
+    "has_nav": true
+  },
+  "description": "An ultra customizable generic theme for Stackbit",
+  "title": "Stackbit Starter Theme"
+}

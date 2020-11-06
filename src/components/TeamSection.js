@@ -1,11 +1,11 @@
-import React from "react";
-import _ from "lodash";
+import React from "react"
+import _ from "lodash"
 
-import { withPrefix, markdownify } from "../utils";
+import { withPrefix, markdownify } from "../utils"
 
 export default class TeamSection extends React.Component {
   render() {
-    let section = _.get(this.props, "section", null);
+    let section = _.get(this.props, "section", null)
     return (
       <section className="section section--team">
         {_.get(section, "title", null) && (
@@ -16,7 +16,7 @@ export default class TeamSection extends React.Component {
         <div className="container container--lg">
           <div className="flex flex--col-3">
             {_.map(_.get(section, "team", null), (person, person_idx) => {
-              let person_data = person;
+              let person_data = person
               return (
                 <div key={person_idx} className="cell">
                   <div className="card team-member">
@@ -48,11 +48,11 @@ export default class TeamSection extends React.Component {
                     </div>
                   </div>
                 </div>
-              );
+              )
             })}
           </div>
         </div>
       </section>
-    );
+    )
   }
 }

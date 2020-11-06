@@ -1,12 +1,12 @@
-import React from "react";
-import _ from "lodash";
+import React from "react"
+import _ from "lodash"
 
-import { classNames } from "../utils";
-import SectionActions from "./SectionActions";
+import { classNames } from "../utils"
+import SectionActions from "./SectionActions"
 
 export default class CtaSection extends React.Component {
   render() {
-    let section = _.get(this.props, "section", null);
+    let section = _.get(this.props, "section", null)
     return (
       <section className="section section--cta">
         <div className="container container--lg">
@@ -43,6 +43,6 @@ export default class CtaSection extends React.Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }

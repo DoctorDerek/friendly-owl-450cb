@@ -1,12 +1,12 @@
-import React from "react";
-import _ from "lodash";
-import moment from "moment-strftime";
-import { graphql } from "gatsby";
+import React from "react"
+import _ from "lodash"
+import moment from "moment-strftime"
+import { graphql } from "gatsby"
 
-import { Layout } from "../components/index";
-import { withPrefix, Link, htmlToReact } from "../utils";
-import BlogPostCategories from "../components/BlogPostCategories";
-import BlogPostTags from "../components/BlogPostTags";
+import { Layout } from "../components/index"
+import { withPrefix, Link, htmlToReact } from "../utils"
+import BlogPostCategories from "../components/BlogPostCategories"
+import BlogPostTags from "../components/BlogPostTags"
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
@@ -16,7 +16,7 @@ export const query = graphql`
       id
     }
   }
-`;
+`
 
 export default class Post extends React.Component {
   render() {
@@ -72,7 +72,7 @@ export default class Post extends React.Component {
                       this.props,
                       "pageContext.frontmatter.author",
                       null
-                    );
+                    )
                     return author.link ? (
                       <span>
                         {" "}
@@ -86,7 +86,7 @@ export default class Post extends React.Component {
                         {" "}
                         by {author.first_name} {author.last_name}
                       </span>
-                    );
+                    )
                   })()}
               </div>
             </header>
@@ -104,6 +104,6 @@ export default class Post extends React.Component {
           </div>
         </article>
       </Layout>
-    );
+    )
   }
 }

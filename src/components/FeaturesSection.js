@@ -1,12 +1,12 @@
-import React from "react";
-import _ from "lodash";
+import React from "react"
+import _ from "lodash"
 
-import { classNames, withPrefix, markdownify } from "../utils";
-import SectionActions from "./SectionActions";
+import { classNames, withPrefix, markdownify } from "../utils"
+import SectionActions from "./SectionActions"
 
 export default class FeaturesSection extends React.Component {
   render() {
-    let section = _.get(this.props, "section", null);
+    let section = _.get(this.props, "section", null)
     return (
       <section className="section section--features">
         {_.get(section, "title", null) && (
@@ -71,6 +71,6 @@ export default class FeaturesSection extends React.Component {
           ))}
         </div>
       </section>
-    );
+    )
   }
 }

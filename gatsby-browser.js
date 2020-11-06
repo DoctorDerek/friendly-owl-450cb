@@ -9,24 +9,24 @@ exports.onInitialClientRender = () => {
     "onGatsbyInitialClientRender" in window &&
     typeof window.onGatsbyInitialClientRender === "function"
   ) {
-    window.onGatsbyInitialClientRender();
+    window.onGatsbyInitialClientRender()
   }
-};
+}
 
 exports.onRouteUpdate = () => {
   if (
     "onGatsbyRouteUpdate" in window &&
     typeof window.onGatsbyRouteUpdate === "function"
   ) {
-    window.onGatsbyRouteUpdate();
+    window.onGatsbyRouteUpdate()
   }
-};
+}
 
 exports.onPreRouteUpdate = () => {
   if (
     "onGatsbyPreRouteUpdate" in window &&
     typeof window.onGatsbyPreRouteUpdate === "function"
   ) {
-    window.onGatsbyPreRouteUpdate();
+    window.onGatsbyPreRouteUpdate()
   }
-};
+}

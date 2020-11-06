@@ -1,8 +1,8 @@
-import React from "react";
-import _ from "lodash";
+import React from "react"
+import _ from "lodash"
 
-import Action from "./Action";
-import { htmlToReact } from "../utils";
+import Action from "./Action"
+import { htmlToReact } from "../utils"
 
 export default class Footer extends React.Component {
   render() {
@@ -91,6 +91,6 @@ export default class Footer extends React.Component {
           </div>
         </div>
       </footer>
-    );
+    )
   }
 }

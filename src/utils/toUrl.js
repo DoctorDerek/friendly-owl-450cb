@@ -1,16 +1,16 @@
-import _ from "lodash";
-import getPage from "./getPage";
+import _ from "lodash"
+import getPage from "./getPage"
 
 export default function toUrl(pages, pagePath) {
   if (_.startsWith(pagePath, "#")) {
-    return pagePath;
+    return pagePath
   } else {
     // remove extension
-    pagePath = pagePath.replace(/\.\w+$/, "");
-    const page = getPage(pages, pagePath);
+    pagePath = pagePath.replace(/\.\w+$/, "")
+    const page = getPage(pages, pagePath)
     if (!page) {
-      throw new Error("could not find page with path: " + pagePath);
+      throw new Error("could not find page with path: " + pagePath)
     }
-    return page.url;
+    return page.url
   }
 }

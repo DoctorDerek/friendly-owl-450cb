@@ -1,10 +1,10 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import _ from "lodash";
+import React from "react"
+import { Helmet } from "react-helmet"
+import _ from "lodash"
 
-import "../sass/main.scss";
-import Header from "./Header";
-import Footer from "./Footer";
+import "../sass/main.scss"
+import Header from "./Header"
+import Footer from "./Footer"
 
 export default class Body extends React.Component {
   render() {
@@ -41,6 +41,6 @@ export default class Body extends React.Component {
           <Footer {...this.props} />
         </div>
       </React.Fragment>
-    );
+    )
   }
 }

@@ -1,9 +1,9 @@
-const { withPrefix: gatsbyWithPrefix } = require("gatsby");
-const _ = require("lodash");
+const { withPrefix: gatsbyWithPrefix } = require("gatsby")
+const _ = require("lodash")
 
 export default function withPrefix(url) {
   if (!url) {
-    return url;
+    return url
   }
 
   if (
@@ -11,7 +11,7 @@ export default function withPrefix(url) {
     _.startsWith(url, "http://") ||
     _.startsWith(url, "https://")
   ) {
-    return url;
+    return url
   }
-  return gatsbyWithPrefix(url);
+  return gatsbyWithPrefix(url)
 }

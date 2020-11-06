@@ -1,14 +1,14 @@
-import React from "react";
-import _ from "lodash";
-import moment from "moment-strftime";
+import React from "react"
+import _ from "lodash"
+import moment from "moment-strftime"
 
-import { Link, withPrefix } from "../utils";
-import BlogPostCategories from "./BlogPostCategories";
+import { Link, withPrefix } from "../utils"
+import BlogPostCategories from "./BlogPostCategories"
 
 export default class BlogPostFeedItem extends React.Component {
   render() {
-    let blog_feed_section = _.get(this.props, "blog_feed_section", null);
-    let post = _.get(this.props, "post_page", null);
+    let blog_feed_section = _.get(this.props, "blog_feed_section", null)
+    let post = _.get(this.props, "post_page", null)
     return (
       <article className="cell">
         <div className="card">
@@ -66,7 +66,7 @@ export default class BlogPostFeedItem extends React.Component {
               </span>
               {_.get(post, "frontmatter.author", null) &&
                 (() => {
-                  let author = _.get(post, "frontmatter.author", null);
+                  let author = _.get(post, "frontmatter.author", null)
                   return author.link ? (
                     <span>
                       {" "}
@@ -80,12 +80,12 @@ export default class BlogPostFeedItem extends React.Component {
                       {" "}
                       by {author.first_name} {author.last_name}
                     </span>
-                  );
+                  )
                 })()}
             </footer>
           </div>
         </div>
       </article>
-    );
+    )
   }
 }

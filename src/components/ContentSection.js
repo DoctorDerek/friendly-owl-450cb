@@ -1,11 +1,11 @@
-import React from "react";
-import _ from "lodash";
+import React from "react"
+import _ from "lodash"
 
-import { markdownify } from "../utils";
+import { markdownify } from "../utils"
 
 export default class ContentSection extends React.Component {
   render() {
-    let section = _.get(this.props, "section", null);
+    let section = _.get(this.props, "section", null)
     return (
       <section className="section">
         <div className="container container--md">
@@ -21,6 +21,6 @@ export default class ContentSection extends React.Component {
           )}
         </div>
       </section>
-    );
+    )
   }
 }

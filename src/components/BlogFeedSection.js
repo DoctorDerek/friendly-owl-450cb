@@ -1,24 +1,24 @@
-import React from "react";
-import _ from "lodash";
+import React from "react"
+import _ from "lodash"
 
-import { getPages } from "../utils";
-import BlogFeedItemFilter from "./BlogFeedItemFilter";
+import { getPages } from "../utils"
+import BlogFeedItemFilter from "./BlogFeedItemFilter"
 
 export default class BlogFeedSection extends React.Component {
   render() {
-    let section = _.get(this.props, "section", null);
-    let section_author = false;
-    let section_category = false;
-    let posts_all = getPages(this.props.pageContext.pages, "/blog");
-    let posts_sorted = _.orderBy(posts_all, "frontmatter.date", "desc");
-    let show_recent = _.get(section, "show_recent", null);
-    let recent_count = _.get(section, "recent_count", null);
-    let post_count = 0;
+    let section = _.get(this.props, "section", null)
+    let section_author = false
+    let section_category = false
+    let posts_all = getPages(this.props.pageContext.pages, "/blog")
+    let posts_sorted = _.orderBy(posts_all, "frontmatter.date", "desc")
+    let show_recent = _.get(section, "show_recent", null)
+    let recent_count = _.get(section, "recent_count", null)
+    let post_count = 0
     if (_.get(section, "author", null)) {
-      section_author = _.get(section, "author", null);
+      section_author = _.get(section, "author", null)
     }
     if (_.get(section, "category", null)) {
-      section_category = _.get(section, "category", null);
+      section_category = _.get(section, "category", null)
     }
     return (
       <section className="section section--posts">
@@ -30,16 +30,16 @@ export default class BlogFeedSection extends React.Component {
         <div className="container container--lg">
           <div className="flex flex--col-3">
             {_.map(posts_sorted, (post, post_idx) => {
-              let is_post = false;
+              let is_post = false
               if (_.get(post, "frontmatter.template", null) === "post") {
-                is_post = true;
+                is_post = true
               }
               return (
                 <React.Fragment key={post_idx + ".1"}>
                   {is_post &&
                     (show_recent === false || post_count < recent_count) &&
                     (() => {
-                      post_count = post_count + 1;
+                      post_count = post_count + 1
                       return (
                         <BlogFeedItemFilter
                           key={post_idx}
@@ -49,14 +49,14 @@ export default class BlogFeedSection extends React.Component {
                           section_author={section_author}
                           section_category={section_category}
                         />
-                      );
+                      )
                     })()}
                 </React.Fragment>
-              );
+              )
             })}
           </div>
         </div>
       </section>
-    );
+    )
   }
 }

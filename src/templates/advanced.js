@@ -1,8 +1,8 @@
-import React from "react";
-import _ from "lodash";
-import { graphql } from "gatsby";
+import React from "react"
+import _ from "lodash"
+import { graphql } from "gatsby"
 
-import components, { Layout } from "../components/index";
+import components, { Layout } from "../components/index"
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
@@ -12,7 +12,7 @@ export const query = graphql`
       id
     }
   }
-`;
+`
 
 export default class Advanced extends React.Component {
   render() {
@@ -23,8 +23,8 @@ export default class Advanced extends React.Component {
           (section, section_idx) => {
             let component = _.upperFirst(
               _.camelCase(_.get(section, "type", null))
-            );
-            let Component = components[component];
+            )
+            let Component = components[component]
             return (
               <Component
                 key={section_idx}
@@ -32,10 +32,10 @@ export default class Advanced extends React.Component {
                 section={section}
                 site={this.props.pageContext.site}
               />
-            );
+            )
           }
         )}
       </Layout>
-    );
+    )
   }
 }
