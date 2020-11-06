@@ -1,8 +1,8 @@
-import React from "react";
-import _ from "lodash";
+import React from "react"
+import _ from "lodash"
 
-import { Link, withPrefix, classNames, Login } from "../utils";
-import Action from "./Action";
+import { Link, withPrefix, classNames, Login } from "../utils"
+import Action from "./Action"
 
 export default class Header extends React.Component {
   render() {
@@ -91,11 +91,11 @@ export default class Header extends React.Component {
                             let pageUrl = _.trim(
                               _.get(this.props, "pageContext.url", null),
                               "/"
-                            );
+                            )
                             let actionUrl = _.trim(
                               _.get(action, "url", null),
                               "/"
-                            );
+                            )
                             return (
                               <li
                                 key={action_idx}
@@ -107,9 +107,12 @@ export default class Header extends React.Component {
                               >
                                 <Action {...this.props} action={action} />
                               </li>
-                            );
+                            )
                           }
                         )}
+                        <li key={"Login"}>
+                          <Login />
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -119,6 +122,6 @@ export default class Header extends React.Component {
           </nav>
         </div>
       </header>
-    );
+    )
   }
 }

@@ -1,4 +1,8 @@
-const siteMetadata = require("./site-metadata.json");
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+const siteMetadata = require("./site-metadata.json")
 
 module.exports = {
   pathPrefix: "/",
@@ -42,4 +46,4 @@ module.exports = {
       },
     },
   ],
-};
+}
