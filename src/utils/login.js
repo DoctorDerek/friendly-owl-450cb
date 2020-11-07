@@ -6,11 +6,11 @@ export default () => {
   return (
     <React.Fragment>
       {profile && (
-        <li key="Hello Username" className="navbar__item navbar__item--btn">
+        <li key="Hello Username" className="navbar__item">
           Hello {profile.name}
         </li>
       )}
-      <li key={"Login Button"} className="navbar__item navbar__item--btn">
+      <li key={"Login Button"} className="navbar__item">
         {isLoggedIn ? (
           <button onClick={AuthService.logout}>Logout</button>
         ) : (
