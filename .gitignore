@@ -68,5 +68,8 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-# Managed by DatoCMS
+# Markdown files managed by DatoCMS
 src/pages/
+
+# Secret API keys for Auth0 testing locally
+.env.development
