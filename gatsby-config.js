@@ -43,7 +43,7 @@ module.exports = {
         // audience: process.env.AUTH0_AUDIENCE,
         // responseType: process.env.AUTH0_RESPONSE_TYPE,
         // scope: process.env.AUTH0_SCOPE,
-        // callbackPath: "/auth/callback",
+        callbackPath: "/auth/callback/",
       },
     },
   ],
