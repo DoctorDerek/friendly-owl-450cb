@@ -1,7 +1,7 @@
 import React from "react"
 import { AuthService, useAuth } from "gatsby-theme-auth0"
 
-export default () => {
+export default Login = () => {
   const { isLoggedIn, profile } = useAuth()
   return (
     <React.Fragment>

@@ -14,6 +14,7 @@ import HeroSection from "./HeroSection"
 import SectionActions from "./SectionActions"
 import TeamSection from "./TeamSection"
 import Layout from "./Layout"
+import Login from "./Login"
 
 export {
   Action,
@@ -32,6 +33,7 @@ export {
   SectionActions,
   TeamSection,
   Layout,
+  Login,
 }
 
 export default {
@@ -51,4 +53,5 @@ export default {
   SectionActions,
   TeamSection,
   Layout,
+  Login,
 }

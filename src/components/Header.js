@@ -1,7 +1,8 @@
 import React from "react"
 import _ from "lodash"
 
-import { Link, withPrefix, classNames, Login } from "../utils"
+import { Link, withPrefix, classNames } from "../utils"
+import Login from "./Login"
 import Action from "./Action"
 
 export default class Header extends React.Component {
