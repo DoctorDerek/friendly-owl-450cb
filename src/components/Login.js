@@ -10,7 +10,7 @@ export default Login = () => {
           Hello {profile.name}
         </li>
       )}
-      <li key={"Login Button"} className="navbar__item">
+      <li key="Login Button" className="navbar__item">
         {isLoggedIn ? (
           <button onClick={AuthService.logout}>Logout</button>
         ) : (
