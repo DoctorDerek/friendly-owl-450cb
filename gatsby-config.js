@@ -46,5 +46,6 @@ module.exports = {
         callbackPath: "/auth/callback/",
       },
     },
+    `gatsby-plugin-remove-trailing-slashes`,
   ],
 }
